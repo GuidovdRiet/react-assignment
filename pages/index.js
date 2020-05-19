@@ -5,10 +5,9 @@ import PageTemplate from "../components/templates/PageTemplate";
 import HTML from "../components/helpers/HTML";
 
 function Home({ data }) {
-  // data prop contains english news messages, display these messages
   return (
     <PageTemplate>
-      {data &&
+      {/* {data &&
         data.map(({ id, title, content }) => (
           <Card key={id}>
             <HTML component="h1" className="title">
@@ -18,22 +17,12 @@ function Home({ data }) {
               {content.rendered}
             </HTML>
           </Card>
-        ))}
+        ))} */}
     </PageTemplate>
   );
 }
 
-export async function getServerSideProps(context) {
-  console.log({ context });
-  const response = await fetch(
-    "https://demo.chainelscms.com/wp-json/wp/v2/news?lang=en"
-  );
-  const data = await response.json();
-
-  return {
-    props: { data }, // will be passed to the page component as prop
-  };
-}
+export async function getServerSideProps(context) {}
 
 export default Home;
 
