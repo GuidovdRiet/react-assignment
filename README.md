@@ -36,6 +36,8 @@ https://veldhoven.chainelscms.com is bijvoorbeeld gescynhroniseerd met de Veldho
 
 De URL van een dergelijk CMS is daarom dus: https://[themanaam].chainelscms.com/wp-json/wp/v2/[data-type].
 
+Voor deze opdracht kun je het volgende endpoint gebruiken: https://demo.chainelscms.com/wp-json/wp/v2
+
 ### Chainels data types
 
 Je bouwt een news feed dus het data type wat je op kan halen is `news`. Andere data types die Chainels gebruikt en in de Consumentenwebsites verwerkt zijn bijvoorbeeld:
@@ -44,6 +46,8 @@ Je bouwt een news feed dus het data type wat je op kan halen is `news`. Andere d
 - `event`
 - `promotion` (aanbiedingen van winkels, zoals 30% korting)
 - `offer` (bijvoorbeeld lunch menus voor restaurants)
+
+Voorbeeld van het endpoint dat je kunt gebruiken om niewsberichten op te halen: https://demo.chainelscms.com/wp-json/wp/v2/news
 
 ### ChainelsCMS parameters
 
