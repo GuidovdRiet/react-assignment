@@ -7,17 +7,8 @@ import HTML from "../components/helpers/HTML";
 function Home({ data }) {
   return (
     <PageTemplate>
-      {/* {data &&
-        data.map(({ id, title, content }) => (
-          <Card key={id}>
-            <HTML component="h1" className="title">
-              {title.rendered}
-            </HTML>
-            <HTML component="div" className="content">
-              {content.rendered}
-            </HTML>
-          </Card>
-        ))} */}
+      {/* Map over news items and fill the cards with content */}
+      <Card>{/* Fill the cards with data */}</Card>
     </PageTemplate>
   );
 }
