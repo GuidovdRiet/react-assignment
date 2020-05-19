@@ -1,7 +1,7 @@
 # Consumersite-core opdracht
 
 Deze opdracht is bedoeld om inzicht te geven in de Chainels Consumentenwebsites codebase, voornamelijk de `consumersite-core` repository.
-In deze kleine repository vind je een geminimaliseerde setup van consumersite-core.
+In deze kleine repository vind je een geminimaliseerde setup van `consumersite-core`.
 
 ## Aan de slag
 
@@ -17,11 +17,11 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Opdracht
 
-Maak met React Hooks en next.js een news feed die data ophaalt van de chainels API, en zonodig meer bij kan laden met een `Load more` button.
+Maak met React Hooks en Next.js een "news feed" die data ophaalt van de Chainels API, en zonodig meer bij kan laden met een `Load more` button.
 
 ## Verdere uitleg
 
-Je kan in principe aan de gang in index.js, wat de root page is in Next.js. Schrijf de body van de functie `getServerSideProps` die de `Home` component kan leveren van `data`. Voorzie de Home component daarna van de functionaliteit om op basis van user input meer data op te halen (een Read More button).
+Je kan in principe aan de gang in `pages/index.js`, wat de root page is in Next.js. Schrijf de body van de functie `getServerSideProps` die de `Home` component kan leveren van `data`. Voorzie de `Home` component daarna van de functionaliteit om op basis van user input meer data op te halen (een Read More button).
 
 ### Verschil in API
 
@@ -29,7 +29,7 @@ Deze repository maakt gebruik van de [nieuwste API](https://nextjs.org/docs/basi
 
 ### Chainels CMS
 
-De data kan je ophalen van het `demo` CMS, waarbij de naam van dat CMS overeenkomt met het huidige thema in de consumersite-core repo (dat is in dit geval gewoon `demo`).
+De data kan je ophalen van het `demo` CMS, waarbij de naam van dat CMS overeenkomt met het huidige thema in de `consumersite-core` repo (voor deze opdracht is dat in dit geval gewoon `demo`).
 Dit zijn Wordpress CMS'en die gebruik maken van WP REST api, en gesynct zijn met de Chainels API door middel van custom Wordpress plugins, per thema.
 
 https://veldhoven.chainelscms.com is bijvoorbeeld gescynhroniseerd met de Veldhoven community in Chainels.
@@ -53,8 +53,8 @@ Wat handige URL parameters om gebruik te maken van de Chainels CMS API:
 | ---------- | :--------------------------------------------------------------------------------------------------------------------------- | :----------------- |
 | `lang`     | taal van het data type                                                                                                       | `en`, `nl`         |
 | `page`     | huidige pagina, let op dat `0` niet valide is en als je een pagina meegeeft die niet bestaat krijg je een error als response | `2`                |
-| `per_page` | are neat                                                                                                                     | `50` (max van 100) |
-| `order_by` | Sorteren                                                                                                                     | `asc`, `desc`      |
+| `per_page` | aantal items per pagina                                                                                                      | `50` (max van 100) |
+| `order_by` | sorteren                                                                                                                     | `asc`, `desc`      |
 
 _HINT: het totaal aantal paginas kan je lezen uit de X-WP-TotalPages header die je terugkrijgt uit de initiele response_
 
