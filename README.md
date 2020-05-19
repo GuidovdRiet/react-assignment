@@ -40,10 +40,10 @@ De URL van een dergelijk CMS is daarom dus: https://[themanaam].chainelscms.com/
 
 Je bouwt een news feed dus het data type wat je op kan halen is `news`. Andere data types die Chainels gebruikt en in de Consumentenwebsites verwerkt zijn zijn bijvoorbeeld:
 
-`company`
-`event`
-`promotion` (aanbiedingen van winkels, zoals 30% korting)
-`offer` (bijvoorbeeld lunch menus voor restaurants)
+- `company`
+- `event`
+- `promotion` (aanbiedingen van winkels, zoals 30% korting)
+- `offer` (bijvoorbeeld lunch menus voor restaurants)
 
 ### ChainelsCMS parameters
 
