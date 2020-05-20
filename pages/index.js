@@ -13,7 +13,7 @@ function Home({ data }) {
   );
 }
 
-export async function getServerSideProps(context) {}
+// export async function getServerSideProps(context) {}
 
 export default Home;
 
